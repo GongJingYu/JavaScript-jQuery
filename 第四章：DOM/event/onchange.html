@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <select id="s1" multiple="multiple">
+        <option>--男神--</option>
+        <option>gjy</option>
+        <option>whl</option>
+        <option>zzz</option>
+    </select>
+
+    <select multiple="multiple" onchange="onchangeFun()">
+        <option>--女神--</option>
+        <option>yq</option>
+        <option>xll</option>
+        <option>ccx</option>
+    </select>
+
+    <script>
+        function onchangeFun() {
+            console.log('女神改变了')
+        }
+
+        window.onload = function () {
+            let s1 = document.getElementById('s1');
+            s1.onchange = function (){
+                console.log('男神改变了');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function onClickFUn() {
+            alert('static onclick')
+        }
+
+        window.onload = function (){
+            let b2 = document.getElementById('b2');
+            b2.onclick = function () {
+                alert('dynamic onclick')
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="b1" onclick="onClickFUn()">按钮1</button>
+    <button id="b2">按钮2</button>
+</body>
+</html>

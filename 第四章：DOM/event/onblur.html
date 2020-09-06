@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="t1" onblur="onblurFun()"> <br>
+    <input type="text" id="t2">
+
+    <script>
+        function onblurFun() {
+            console.log('static aaaa');
+        }
+
+        window.onblur = function (){
+            let t2 = document.getElementById('t2');
+            t2.onblur = function (){
+                console.log('dynamic aaaa');
+            }
+        }
+    </script>
+</body>
+</html>
