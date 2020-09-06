@@ -1,1 +1,4 @@
 # JavaScript-jQuery
+JavaScript
+
+jQuery
