@@ -1,0 +1,26 @@
+JavaScript的组成：
+1.ECMAScript：JavaScript的编程语法和基础核心内容
+2.DOM：文档对象模型
+3.BOM：浏览器对象模型
+
+书写位置：
+1.行内式   <body onload="alert('Hello World')">
+2.内嵌式   <script> alert("Hello World") </script>
+3.外部式   <script src="test.js"></script>
+
+注释：
+单行注释    //
+多行注释    /* */
+
+输入输出：
+输出:
+    1.alert('Hello');
+    2.console.log("Hello");
+    3.document.write('Hello');
+输入:
+    prompt();
+
+JavaScript变量：
+声明：let a;
+赋值：a = 10;
+声明并赋值：let b = 20;
