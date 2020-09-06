@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+</head>
+<body>
+    <script>
+        //1.使用new Array()创建数组
+        let arr1 = new Array();
+        let arr2 = new Array('gjy','yq');
+
+        //2.使用字面量创建数组
+        let a = [];
+        let b = ['gjy','yq'];
+
+        /*
+            数组中可以放任意类型的元素：
+                Number,String,Boolean,undefined,null
+        */
+
+        /*
+            数组名[索引] 索引从0开始
+            当访问的索引值超过该数组的最下标时，值为undefined
+         */
+        console.log(arr2[0]);
+        console.log(b[0]);
+
+        let score = [34,21,12,3,21,3,21,2];
+        // for (let i=0;i<score.length;i++){
+        //     console.log(score[i]);
+        // }
+        for (let i in score) {
+            console.log(score[i]);
+        }
+    </script>
+</body>
+</html>
